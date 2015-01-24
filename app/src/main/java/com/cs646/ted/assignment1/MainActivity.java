@@ -15,6 +15,7 @@ public class MainActivity extends ActionBarActivity {
 
     TextView calledFunctionsOutput;
     String calledFunctionsText  = "";
+    String functionName;
 
     static final String USER_STATE = "user";
 
@@ -40,55 +41,65 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        calledFunctionsText += "onCreate\n";
+        functionName = getString(R.string.on_create_text) + "\n";
+
+        calledFunctionsText += functionName;
         calledFunctionsOutput = (TextView) this.findViewById(R.id.calledFunctionsOutput);
         calledFunctionsOutput.setText(calledFunctionsText);
 
-        Log.d("Function name", "onCreate\n");
+        Log.d(getString(R.string.log_type_text), functionName);
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
 
-        calledFunctionsText += "onRestart\n";
+        functionName = getString(R.string.on_restart_text) + "\n";
+
+        calledFunctionsText += functionName;
         calledFunctionsOutput = (TextView) this.findViewById(R.id.calledFunctionsOutput);
         calledFunctionsOutput.setText(calledFunctionsText);
 
-        Log.d("Function name", "onRestart\n");
+        Log.d(getString(R.string.log_type_text), functionName);
     }
 
     @Override
     protected void onStart() {
         super.onStart();
 
-        calledFunctionsText += "onStart\n";
+        functionName = getString(R.string.on_start_text) + "\n";
+
+        calledFunctionsText += functionName;
         calledFunctionsOutput = (TextView) this.findViewById(R.id.calledFunctionsOutput);
         calledFunctionsOutput.setText(calledFunctionsText);
 
-        Log.d("Function name", "onStart\n");
+        Log.d(getString(R.string.log_type_text), functionName);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
 
-        calledFunctionsText += "onPause\n";
+        functionName = getString(R.string.on_pause_text) + "\n";
+
+        calledFunctionsText += functionName;
         calledFunctionsOutput = (TextView) this.findViewById(R.id.calledFunctionsOutput);
         calledFunctionsOutput.setText(calledFunctionsText);
 
-        Log.d("Function name", "onPause\n");
+        Log.d(getString(R.string.log_type_text), functionName);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
 
-        calledFunctionsText += "onResume\n";
+        functionName = getString(R.string.on_resume_text) + "\n";
+
+        calledFunctionsText += functionName;;
         calledFunctionsOutput = (TextView) this.findViewById(R.id.calledFunctionsOutput);
         calledFunctionsOutput.setText(calledFunctionsText);
 
-        Log.d("Function name", "onResume\n");
+        Log.d(getString(R.string.log_type_text), functionName);
     }
 
     /**
@@ -100,13 +111,15 @@ public class MainActivity extends ActionBarActivity {
     protected void onSaveInstanceState(Bundle savedInstanceState) {
         super.onSaveInstanceState(savedInstanceState);
 
-        calledFunctionsText += "onSavedInstanceState\n";
+        functionName = getString(R.string.on_saveinst_text) + "\n";
+
+        calledFunctionsText += functionName;
         calledFunctionsOutput = (TextView) this.findViewById(R.id.calledFunctionsOutput);
         calledFunctionsOutput.setText(calledFunctionsText);
 
         savedInstanceState.putString(USER_STATE, calledFunctionsText);
 
-        Log.d("Function name", "onSaveInstanceState\n");
+        Log.d(getString(R.string.log_type_text), functionName);
     }
 
     /**
@@ -120,11 +133,14 @@ public class MainActivity extends ActionBarActivity {
         super.onRestoreInstanceState(savedInstanceState);
 
         String savedStateText = savedInstanceState.getString(USER_STATE);
-        calledFunctionsText = savedStateText + calledFunctionsText + "onRestoreInstanceState\n";
+
+        functionName = getString(R.string.on_restinst_text) + "\n";
+
+        calledFunctionsText = savedStateText + calledFunctionsText + functionName;
         calledFunctionsOutput = (TextView) this.findViewById(R.id.calledFunctionsOutput);
         calledFunctionsOutput.setText(calledFunctionsText);
 
-        Log.d("Function name", "onRestoreInstanceState\n");
+        Log.d(getString(R.string.log_type_text), functionName);
     }
 
     @Override

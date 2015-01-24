@@ -1423,6 +1423,14 @@ containing a value of this type.
         public static final int action_settings=0x7f0a0010;
         public static final int app_name=0x7f0a0011;
         public static final int clear_button_text=0x7f0a0012;
+        public static final int log_type_text=0x7f0a0013;
+        public static final int on_create_text=0x7f0a0014;
+        public static final int on_pause_text=0x7f0a0015;
+        public static final int on_restart_text=0x7f0a0016;
+        public static final int on_restinst_text=0x7f0a0017;
+        public static final int on_resume_text=0x7f0a0018;
+        public static final int on_saveinst_text=0x7f0a0019;
+        public static final int on_start_text=0x7f0a001a;
     }
     public static final class style {
         /**  Customize your theme here. 

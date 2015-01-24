@@ -4,5 +4,14 @@
     <string name="app_name">Assignment1</string>
     <string name="clear_button_text">Clear</string>
     <string name="action_settings">Settings</string>
+    <string name="on_create_text">onCreate</string>
+    <string name="on_start_text">onStart</string>
+    <string name="on_restart_text">onRestart</string>
+    <string name="on_resume_text">onResume</string>
+    <string name="on_pause_text">onPause</string>
+    <string name="on_saveinst_text">onSaveInstanceState</string>
+    <string name="on_restinst_text">onRestoreInstanceState</string>
+    <string name="log_type_text">Function name</string>
+
 
 </resources>
