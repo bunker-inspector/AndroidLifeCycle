@@ -1,0 +1,5 @@
+/home/ted/Android/projects/Assignment1/app/build/intermediates/classes/debug
+/home/ted/Android/projects/Assignment1/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-b219ae2eb28fa321e586cd47ab2957e2b18c15a9.jar
+/home/ted/Android/projects/Assignment1/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-4cf794154d4d675c0b9cfda217e60e555b53d50a.jar
+/home/ted/Android/projects/Assignment1/app/build/intermediates/pre-dexed/debug/classes-3e98a58fd3488cbfb5c304c5690a5448cdf7dc99.jar
+/home/ted/Android/projects/Assignment1/app/build/intermediates/pre-dexed/debug/classes-42b8d32a3bdd7ab7300dadb5328ec021a881f34b.jar

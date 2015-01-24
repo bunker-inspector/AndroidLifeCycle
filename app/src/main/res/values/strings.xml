@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Assignment1</string>
+    <string name="clear_button_text">Clear</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
